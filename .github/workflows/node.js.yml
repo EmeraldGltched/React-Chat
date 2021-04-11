@@ -28,3 +28,9 @@ jobs:
     - run: npm init react-app react-deploy
     - run: cd react-deploy
     - run: npm start
+    
+    - name: Download a Build Artifact
+      uses: actions/download-artifact@v2.0.9
+      with:
+        # Destination path
+        path: ./
